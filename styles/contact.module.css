@@ -1,0 +1,28 @@
+#contactPage {
+    background-color: #310745;
+    color: white;
+    padding-top: 7rem;
+    height: 100vh;
+}
+
+#contactForm {
+    max-width: 25rem;
+}
+
+.imageColumn {
+    max-width: 4rem;
+}
+
+.linkColumn {
+    margin: auto;
+
+}
+.anchor {
+    color: white;
+    text-decoration: none;
+}
+
+.anchor:hover {
+    color: yellow;
+    font-weight: bold;
+}

@@ -1,0 +1,12 @@
+#lostContainer {
+    padding-top: 10rem;
+    background-color: #310745;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lostContainer * {
+    margin: 0.5rem;
+}

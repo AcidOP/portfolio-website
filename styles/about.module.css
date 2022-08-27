@@ -1,0 +1,38 @@
+#about {
+    background-color: #310745;  
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero {
+    padding-top: 7rem;
+}
+
+#heroContact {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#contactButton {
+    max-width: 7rem;
+    margin-top: 1rem;
+}
+
+.heroText {
+    max-width: 35rem;
+
+}
+
+.green {
+    color: #00ff00;
+}
+
+.red {
+    color: #ff3300;
+}

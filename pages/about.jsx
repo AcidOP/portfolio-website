@@ -31,7 +31,7 @@ const About = () => {
 
           <p id={styles.heroContact}>
             Here&apos;s how you can find me:
-            <Button onClick={pushToContact} variant="outline-light"  id={styles.contactButton}>Contact 🤳</Button>
+            <Button onClick={pushToContact} variant="outline-light" size='sm' id={styles.contactButton}>Contact 🤳</Button>
             <br />
           </p>
 

@@ -10,9 +10,9 @@ const FourOhFour = () => {
 
 	return (
 		<div id={styles.lostContainer}>
-			<h3>404 | Page not found 😢</h3>
-			<h4>Are you lost?</h4>
-			<Button onClick={pushToHome} variant="outline-light" className='mt-5' style={{maxWidth: '10rem'}}>
+			<h3>You seem to have lost your way</h3>
+			<h6>Let me take you home 😊</h6>
+			<Button onClick={pushToHome} variant="outline-light" className='mt-5' size='sm'>
 				Come Home 🙋‍♂️
 			</Button>
 		</div>

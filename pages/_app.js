@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>AcidOP</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Appbar />
       <Component {...pageProps} />

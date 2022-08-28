@@ -14,11 +14,11 @@ export default function Home() {
 
   return (
     <div id={styles.homepage}>
-      <Container style={{ height: '100vh' }}>
+      <Container style={{ height: '80vh' }}>
         <div id={styles.hero}>
           <Image src={codingLogo} width={200} height={200} alt="logo" id={styles.codeLogo} />
           <div id={styles.intro}>
-            <h1 id={styles.heading}>Hi, I&apos;m<span id={styles.title}>AcidOP</span></h1>
+            <h1 id={styles.heading}>Hi, I&apos;m {' '}<span id={styles.title}>AcidOP</span></h1>
             <p id={styles.heroText}>I&apos;m a Tech Enthusiast and a High School student.</p>
             <Button onClick={pushToAbout} size='sm' variant="outline-light">Read More 📖</Button>
           </div>

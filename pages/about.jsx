@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <div id={styles.about} >
-      <Container style={{ height: '100vh' }}>
+      <Container>
 
         <div id={styles.hero}>
           <h2>Hello There 👋</h2>

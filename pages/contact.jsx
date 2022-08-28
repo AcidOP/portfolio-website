@@ -34,7 +34,7 @@ const Contact = () => {
             </Col>
 
             <Col className={styles.linkColumn}>
-              <a className={styles.anchor} href="https://instagram.com/whynotacid">whynotacid</a>
+              <a className={styles.anchor} target='blank' href="https://instagram.com/whynotacid">whynotacid</a>
             </Col>
 
           </Row>
@@ -46,7 +46,7 @@ const Contact = () => {
             </Col>
 
             <Col className={styles.linkColumn}>
-              <a className={styles.anchor} href="https://github.com/AcidOP">AcidOP</a>
+              <a className={styles.anchor} target='blank' href="https://github.com/AcidOP">AcidOP</a>
             </Col>
 
           </Row>
@@ -58,7 +58,7 @@ const Contact = () => {
             </Col>
 
             <Col className={styles.linkColumn}>
-              <a className={styles.anchor} href="https://www.reddit.com/user/AcidOP_69">AcidOP_69</a>
+              <a className={styles.anchor} target='blank' href="https://www.reddit.com/user/AcidOP_69">AcidOP_69</a>
             </Col>
 
           </Row>

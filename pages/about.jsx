@@ -15,7 +15,7 @@ const About = () => {
       <Container style={{ height: '100vh' }}>
 
         <div id={styles.hero}>
-          <h2 >Hello There 👋</h2>
+          <h2>Hello There 👋</h2>
 
           <p className={styles.heroText}>
             I&apos;m a 17 year old self taught programmer. I love to sip coffee and cry while I am trying to code.

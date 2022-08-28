@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import '../styles/globals.css'
 import Appbar from './components/Appbar'
+import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MyApp({ Component, pageProps }) {
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Appbar />
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }

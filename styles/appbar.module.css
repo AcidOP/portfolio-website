@@ -1,7 +1,7 @@
 #appbar {
     position: absolute;
     width: 100% ;
-    background-color: #310745;
+    background-color: inherit;
 }
 
 #logo:hover {

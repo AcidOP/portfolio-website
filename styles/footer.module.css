@@ -1,0 +1,18 @@
+#footer {
+    /* background-color: #310745; */
+    background-color: inherit;
+    justify-content: center;
+    color: white;
+    font-size: small;
+}
+
+#footer a {
+    color: white;
+    padding-left: 0.5rem;
+    color: yellow;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: rgb(1, 255, 1);
+}

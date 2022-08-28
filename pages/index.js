@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div id={styles.homepage}>
-      <Container style={{ height: '80vh' }}>
+      <Container id={styles.homeContainer}>
         <div id={styles.hero}>
           <Image src={codingLogo} width={200} height={200} alt="logo" id={styles.codeLogo} />
           <div id={styles.intro}>

@@ -1,6 +1,10 @@
 #homepage {
-    background-color: #310745;
     color: white;
+    background-color: #310745;
+}
+
+#homeContainer {
+    height: 90vh;
 }
 
 #hero {
@@ -38,8 +42,10 @@
 @media (max-width: 1000px) {
     #hero {
         flex-direction: column;
-        /* align-items: center; */
         justify-content: center;
+    }
+    #homeContainer {
+        height: 70vh;
     }
     #heading {
         font-size: 1.5rem;

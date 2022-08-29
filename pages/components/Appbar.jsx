@@ -15,7 +15,7 @@ const Appbar = () => {
 	const slug = router.pathname.split('/')[1];
 
 	return (
-		<Navbar id={styles.appbar} variant='dark' expand="lg" fixed='top' collapseOnSelect>
+		<Navbar id={styles.appbar} variant='dark' expand="lg" sticky='top' collapseOnSelect>
 			<Container style={{ padding: '0.7em' }}>
 				<Link href='/'><Image src={logo} width={60} height={60} alt="logo" id={styles.logo} /></Link>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />

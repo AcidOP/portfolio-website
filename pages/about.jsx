@@ -19,7 +19,7 @@ const About = () => {
 
           <p className={styles.heroText}>
             I&apos;m a 17 year old self taught programmer. I love to sip coffee and cry while I am trying to code.
-            Currently I&apos;m learning about malware development with C# and tiny little bit of cybersecurity.
+            Currently I&apos;m currently making discord bots for servers and making them more fun and engaging.
             <br />
           </p>
 

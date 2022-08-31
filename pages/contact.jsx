@@ -34,7 +34,7 @@ const Contact = () => {
             </Col>
 
             <Col className={styles.linkColumn}>
-              <a className={styles.anchor}>zeeshanalivr46@gmail.com</a>
+              <a href="mailto:zeeshanalivr46@gmail.com" className={styles.anchor}>zeeshanalivr46@gmail.com</a>
             </Col>
 
           </Row>

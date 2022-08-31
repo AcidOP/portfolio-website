@@ -11,6 +11,7 @@ import Form from 'react-bootstrap/Form'
 import instagram from '../public/instagram.png'
 import github from '../public/github.png'
 import reddit from '../public/reddit.png'
+import gmail from '../public/gmail.png'
 import styles from '../styles/contact.module.css'
 
 const Contact = () => {
@@ -25,6 +26,18 @@ const Contact = () => {
         <h2>Contact 📨</h2>
 
         <Form id={styles.contactForm} className='pt-3'>
+
+          <Row className='pt-2'>
+
+            <Col className={styles.imageColumn}>
+              <Image src={gmail} width={50} height={50} alt='email' />
+            </Col>
+
+            <Col className={styles.linkColumn}>
+              <a className={styles.anchor}>zeeshanalivr46@gmail.com</a>
+            </Col>
+
+          </Row>
 
           <Row className='pt-2'>
 
@@ -61,6 +74,8 @@ const Contact = () => {
             </Col>
 
           </Row>
+
+
 
           <Button onClick={pushToHome} variant='outline-light' size='sm' className='mt-4'>Go Back 🔙</Button>
 

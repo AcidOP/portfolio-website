@@ -8,7 +8,6 @@ import codingLogo from '../public/coding.png'
 import styles from '../styles/index.module.css'
 
 export default function Home() {
-
   const router = useRouter();
   const pushToAbout = () => router.push('/about');
 

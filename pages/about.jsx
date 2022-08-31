@@ -7,7 +7,6 @@ import styles from '../styles/about.module.css'
 
 const About = () => {
   const router = useRouter();
-
   const pushToContact = () => router.push('/contact');
 
   return (

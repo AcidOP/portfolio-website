@@ -30,11 +30,24 @@ const Contact = () => {
           <Row className='pt-2'>
 
             <Col className={styles.imageColumn}>
-              <Image src={gmail} width={50} height={50} alt='email' />
+              <Image src={github} width={50} height={50} alt='github' />
             </Col>
 
             <Col className={styles.linkColumn}>
-              <a href="mailto:zeeshanalivr46@gmail.com" className={styles.anchor}>zeeshanalivr46@gmail.com</a>
+              <a className={styles.anchor} target='_blank' rel="noreferrer" href="https://github.com/AcidOP">AcidOP</a>
+            </Col>
+
+          </Row>
+
+
+          <Row className='pt-2'>
+
+            <Col className={styles.imageColumn}>
+              <Image src={reddit} width={50} height={50} alt='reddit' />
+            </Col>
+
+            <Col className={styles.linkColumn}>
+              <a className={styles.anchor} target='_blank' rel="noreferrer" href="https://www.reddit.com/user/AcidOP_69">AcidOP_69</a>
             </Col>
 
           </Row>
@@ -54,28 +67,14 @@ const Contact = () => {
           <Row className='pt-2'>
 
             <Col className={styles.imageColumn}>
-              <Image src={github} width={50} height={50} alt='github' />
+              <Image src={gmail} width={50} height={50} alt='email' />
             </Col>
 
             <Col className={styles.linkColumn}>
-              <a className={styles.anchor} target='_blank' rel="noreferrer" href="https://github.com/AcidOP">AcidOP</a>
+              <a href="mailto:zeeshanalivr46@gmail.com" className={styles.anchor}>zeeshanalivr46@gmail.com</a>
             </Col>
 
           </Row>
-
-          <Row className='pt-2'>
-
-            <Col className={styles.imageColumn}>
-              <Image src={reddit} width={50} height={50} alt='reddit' />
-            </Col>
-
-            <Col className={styles.linkColumn}>
-              <a className={styles.anchor} target='_blank' rel="noreferrer" href="https://www.reddit.com/user/AcidOP_69">AcidOP_69</a>
-            </Col>
-
-          </Row>
-
-
 
           <Button onClick={pushToHome} variant='outline-light' size='sm' className='mt-4'>Go Back 🔙</Button>
 

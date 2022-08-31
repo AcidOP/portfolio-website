@@ -15,7 +15,6 @@ import styles from '../styles/contact.module.css'
 
 const Contact = () => {
   const router = useRouter();
-
   const pushToHome = () => router.push('/');
 
   return (

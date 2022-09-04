@@ -62,7 +62,7 @@ description: I made a discord bot for a server which I moderate. It's a simple b
 7. Run the bot
 * `node index.js`
 
-![Butter Bot](http://localhost:3000/images/bot.JPG)
+![Butter Bot](https://acidop.codes/images/bot.JPG)
 
 ##### View this project on GitHub
 * [Butter Bot](https://github.com/AcidOP/ButterHostServer)

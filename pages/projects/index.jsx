@@ -3,16 +3,29 @@ import React from 'react'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
 
-import ProjectCard from '../components/ProjectCard'
-
+import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 
 import styles from '../../styles/projects.module.css'
+import cardStyle from '../../styles/projectCard.module.css'
 
 const Projects = ({ projects }) => {
   const router = useRouter();
   const pushToContact = () => router.push('/contact')
+  
+  const ProjectCard = ({project}) => {
+    const pushToProjectPage = () => router.push(`/projects/${project.slug}`)
+    return <Card className={cardStyle.myCard} onClick={pushToProjectPage}>
+      <div className={cardStyle.container}>
+        <Card.Text>{project.date}</Card.Text>
+        <div className={cardStyle.body}>
+          <Card.Title>{project.title}</Card.Title>
+          <Card.Text>{project.description}</Card.Text>
+        </div>
+      </div>
+    </Card>
+  }
 
   return (
     <div id={styles.projectPage}>
@@ -58,7 +71,7 @@ export async function getStaticProps() {
 
   // Change the date syntax DD/MM/YYYY
   frontmatter = frontmatter.map(project => {
-    
+
     const date = project.date.split('-')
 
     const year = date[0]

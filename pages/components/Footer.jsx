@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar'
 
 const Footer = () => {
 	return (
-		<Navbar id={styles.footer}>
+		<Navbar id={styles.footer} fixed='bottom'>
 			Made with 💝 by <a href='https://github.com/AcidOP' target='_blank' rel='noreferrer'>AcidOP</a>
 		</Navbar>
 	)

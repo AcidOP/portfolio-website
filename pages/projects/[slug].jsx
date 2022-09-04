@@ -1,5 +1,6 @@
 import fs from 'fs'
-import React from 'react'
+import React, { useEffect } from 'react'
+import Head from 'next/head'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
 import ReactMarkdown from 'react-markdown'
@@ -9,11 +10,14 @@ import Container from 'react-bootstrap/Container'
 
 import styles from '../../styles/projectPage.module.css'
 
-const Project = ({ data }) => {
+const Project = ({ data, title }) => {
   const router = useRouter();
   const pushToProjects = () => router.push('/projects');
 
-  return (
+  return (<>
+    <Head>
+      <title>{title}</title>
+    </Head>
     <div id={styles.container}>
       <Container>
         <Button variant="outline-light" size='sm' className='mt-3' onClick={pushToProjects}>Go Back</Button>
@@ -22,6 +26,7 @@ const Project = ({ data }) => {
         </ReactMarkdown>
       </Container>
     </div >
+  </>
   )
 }
 
@@ -50,10 +55,11 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: { slug } }) {
 
   const markdown = fs.readFileSync(`./markdowns/projects/${slug}.md`, 'utf8');
-  const { content } = matter(markdown);
+  const { data, content } = matter(markdown);
 
   return {
     props: {
+      title: data.title,
       data: content
     }
   }

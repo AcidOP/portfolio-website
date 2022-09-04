@@ -1,4 +1,9 @@
 #footer {
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     background-color: #310745;
     justify-content: center;
     color: white;

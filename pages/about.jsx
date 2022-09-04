@@ -7,7 +7,7 @@ import styles from '../styles/about.module.css'
 
 const About = () => {
   const router = useRouter();
-  const pushToContact = () => router.push('/contact');
+  const pushToProjects = () => router.push('/projects');
 
   return (
     <div id={styles.about} >
@@ -29,8 +29,8 @@ const About = () => {
 
 
           <p id={styles.heroContact}>
-            Here&apos;s how you can find me:
-            <Button onClick={pushToContact} variant="outline-light" size='sm' id={styles.contactButton}>Contact 🤳</Button>
+            Check out these cool projects I have built:
+            <Button onClick={pushToProjects} variant="outline-light" size='sm' id={styles.contactButton}>Projects 🔨</Button>
             <br />
           </p>
 

@@ -24,6 +24,7 @@ const Appbar = () => {
 
 						<Link href='/' passHref><Nav.Link active={!slug} className='px-3'>🚀 Home</Nav.Link></Link>
 						<Link href='/about' passHref><Nav.Link active={slug === 'about'} className='px-3'>👑 About</Nav.Link></Link>
+						<Link href='/projects' passHref><Nav.Link active={slug === 'projects'} className='px-3'>🔨 Projects</Nav.Link></Link>
 						<Link href='/contact' passHref><Nav.Link active={slug === 'contact'} className='px-3'>💌 Contact</Nav.Link></Link>
 
 					</Nav>

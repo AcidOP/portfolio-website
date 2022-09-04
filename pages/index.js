@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { useRouter } from "next/router"
 
+import Footer from './components/Footer'
+
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
 
@@ -23,6 +25,7 @@ export default function Home() {
           </div>
         </div>
       </Container>
+      <Footer />
     </div>
   )
 }

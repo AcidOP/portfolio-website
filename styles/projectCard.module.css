@@ -1,0 +1,39 @@
+.myCard {
+  background-color: transparent;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: medium solid #29063a;
+  width: 70vw;
+}
+
+.myCard:hover {
+  background: #29063a;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container > div {
+  padding-left: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+  
+  .myCard {
+    width: 100%;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+  
+  .container > div {
+    padding-left: 0;
+  }
+  
+
+}

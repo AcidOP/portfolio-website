@@ -1,0 +1,18 @@
+#projectPage {
+    color: white;
+    background-color: #310745;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#invite {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+}
+
+#projectContainer {
+    width: 100%;
+    color: white;
+}

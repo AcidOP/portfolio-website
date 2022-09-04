@@ -25,41 +25,29 @@ const Project = ({ data }) => {
   )
 }
 
-// export async function getStaticPaths() {
+export async function getStaticPaths() {
 
-//   const files = fs.readdirSync('./markdowns/projects', 'utf-8')
-//   const markdowns = files.filter(file => file.endsWith('.md'))
+  const files = fs.readdirSync('./markdowns/projects', 'utf-8')
+  const markdowns = files.filter(file => file.endsWith('.md'))
 
-//   const paths = markdowns.map(file => {
-//     const markdown = fs.readFileSync(`./markdowns/projects/${file}`, 'utf8');
-//     const { data } = matter(markdown);
+  const paths = markdowns.map(file => {
+    const markdown = fs.readFileSync(`./markdowns/projects/${file}`, 'utf8');
+    const { data } = matter(markdown);
 
-//     return {
-//       params: {
-//         slug: data.slug
-//       }
-//     }
-//   })
+    return {
+      params: {
+        slug: data.slug
+      }
+    }
+  })
 
-//   return {
-//     paths,
-//     fallback: false
-//   }
-// }
+  return {
+    paths,
+    fallback: false
+  }
+}
 
-// export async function getStaticProps({ params: { slug } }) {
-
-//   const markdown = fs.readFileSync(`./markdowns/projects/${slug}.md`, 'utf8');
-//   const { content } = matter(markdown);
-
-//   return {
-//     props: {
-//       data: content
-//     }
-//   }
-// }
-
-export async function getServerSideProps({ params: { slug } }) {
+export async function getStaticProps({ params: { slug } }) {
 
   const markdown = fs.readFileSync(`./markdowns/projects/${slug}.md`, 'utf8');
   const { content } = matter(markdown);
@@ -70,5 +58,6 @@ export async function getServerSideProps({ params: { slug } }) {
     }
   }
 }
+
 
 export default Project

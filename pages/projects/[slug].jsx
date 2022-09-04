@@ -10,14 +10,21 @@ import Container from 'react-bootstrap/Container'
 
 import styles from '../../styles/projectPage.module.css'
 
-const Project = ({ data, title }) => {
+const Project = ({ data, title, description, slug }) => {
   const router = useRouter();
   const pushToProjects = () => router.push('/projects');
 
   return (<>
     <Head>
       <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={`https://acidop.codes/${slug}`} />
+      <meta property="og:locale" content="en_US" />
     </Head>
+
     <div id={styles.container}>
       <Container>
         <Button variant="outline-light" size='sm' className='mt-3' onClick={pushToProjects}>Go Back</Button>
@@ -59,8 +66,10 @@ export async function getStaticProps({ params: { slug } }) {
 
   return {
     props: {
+      data: content,
       title: data.title,
-      data: content
+      slug: data.slug,
+      description: data.description,
     }
   }
 }

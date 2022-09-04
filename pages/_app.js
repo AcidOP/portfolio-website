@@ -16,6 +16,12 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>{title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Website of prodigy coder AcidOP. This is my first steop towards dominating the world with my coding skills!" />
+        <meta property="og:url" content="https://acidop.codes" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+
       </Head>
       <Appbar />
       <Component {...pageProps} />

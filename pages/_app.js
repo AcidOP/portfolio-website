@@ -21,8 +21,8 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:url" content="https://acidop.codes" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
-
       </Head>
+
       <Appbar />
       <Component {...pageProps} />
       <Footer />

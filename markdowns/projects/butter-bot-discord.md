@@ -1,10 +1,8 @@
 ---
-
 title: Butter Bot - Discord
 date: "2022-09-03"
 slug: butter-bot-discord
 description: I made a discord bot for a server which I moderate. It's a simple bot, but it does the job.
-
 ---
 
 ------------
@@ -19,19 +17,19 @@ description: I made a discord bot for a server which I moderate. It's a simple b
 1. Has a based levelling system. 💹
 * `Based` 
 
-2. Make anonymous confessions.
+2. Make anonymous confessions. 🤫
 * `/confess <message>`
 
-3. Make anonymous reports.
+3. Make anonymous reports. 📝
 * `/report @user <reason>`
 
-4. Show your level and the most active member on the server.
+4. Show your level and the most active member on the server. 📈
 * `/level @user and /leaderboard`
 
-5. Display information about the server and other members.
+5. Display information about the server and other members. 📊
 * `/whois @user and /details`
 
-6. Moderators can add and remove roles from members.
+6. Moderators can add and remove roles from members. 👮
 * `/addrole @user <role> and /removerole @user <role>`
 
 ##### How do I use it?

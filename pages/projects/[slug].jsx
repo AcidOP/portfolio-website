@@ -1,5 +1,4 @@
 import fs from 'fs'
-import React, { useEffect } from 'react'
 import Head from 'next/head'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
@@ -27,7 +26,9 @@ const Project = ({ data, title, description, slug }) => {
 
     <div id={styles.container}>
       <Container>
-        <Button variant="outline-light" size='sm' className='mt-3' onClick={pushToProjects}>Go Back</Button>
+        <Button variant="outline-light" size='sm' className='mt-3' onClick={pushToProjects}>
+          Go Back 👈🏻
+        </Button>
         <ReactMarkdown className='pt-3' >
           {data}
         </ReactMarkdown>

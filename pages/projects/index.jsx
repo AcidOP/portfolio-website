@@ -1,5 +1,4 @@
 import fs from 'fs'
-import React from 'react'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
 

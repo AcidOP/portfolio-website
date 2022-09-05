@@ -16,7 +16,7 @@ const Project = ({ data, title, description, slug }) => {
 
   return (<>
     <Head>
-      <title>{title}</title>
+      <title>{title} | AcidOP</title>
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

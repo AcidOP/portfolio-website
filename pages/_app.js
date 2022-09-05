@@ -9,8 +9,8 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const { pathname } = router;
 
-  const sub = pathname === '/' ? 'AcidOP' : pathname.slice(1).charAt(0).toUpperCase() + pathname.slice(2)
-  const title = (sub === 'AcidOP') ? 'Home | ' + sub : sub + ' | AcidOP'
+  const page = pathname.slice(1).charAt(0).toUpperCase() + pathname.slice(2)
+  const title = pathname === '/' ? 'Home | AcidOP' : page + ' | AcidOP'
 
   return (
     <>

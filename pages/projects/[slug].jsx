@@ -13,9 +13,12 @@ const Project = ({ data, title, description, slug }) => {
   const router = useRouter();
   const pushToProjects = () => router.push('/projects');
 
+  // Hydration error for some reason 😓
+  const heading = title + ' | AcidOP'
+
   return (<>
     <Head>
-      <title>{title} | AcidOP</title>
+      <title>{heading}</title>
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

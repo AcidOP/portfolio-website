@@ -75,7 +75,7 @@ const Contact = () => {
 
           </Row>
 
-          <Button onClick={pushToHome} variant='outline-light' size='sm' className='mt-4'>Go Back 🔙</Button>
+          <Button onClick={pushToHome} variant='outline-light' size='sm' className='my-4'>Go Back 🔙</Button>
 
         </Form>
 

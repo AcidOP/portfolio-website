@@ -19,7 +19,6 @@ The book and quill is then signed by a player.`
 #### What can I do with this?
 * `Get full stack of any item in the game.`
 * `Put any enchantment on any item.`
-* `Get any potion effect.`
 * `Get the location of any player online.`
 * `Get bed location of any online player.`
 * `Teleport to any location/player.`

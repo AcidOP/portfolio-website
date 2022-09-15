@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Script from 'next/script';
 import '../styles/globals.css'
 import Appbar from './components/Appbar'
 import Footer from './components/Footer'
@@ -16,10 +17,10 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>{title}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
       </Head>
+
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js"  />
 
       <Appbar />
       <Component {...pageProps} />

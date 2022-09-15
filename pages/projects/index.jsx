@@ -1,8 +1,10 @@
 import fs from 'fs'
+import { useState } from 'react'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
 
 import Card from 'react-bootstrap/Card'
+import Spinner from 'react-bootstrap/Spinner'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 
@@ -12,9 +14,13 @@ import cardStyle from '../../styles/projectCard.module.css'
 const Projects = ({ projects }) => {
   const router = useRouter();
   const pushToContact = () => router.push('/contact')
+  const [show, setShow] = useState(false);
   
   const ProjectCard = ({project}) => {
-    const pushToProjectPage = () => router.push(`/projects/${project.slug}`)
+    const pushToProjectPage = () => {
+      router.push(`/projects/${project.slug}`)
+      setShow(true)
+    }
     return <Card className={cardStyle.myCard} onClick={pushToProjectPage}>
       <div className={cardStyle.container}>
         <Card.Text>{project.date}</Card.Text>
@@ -30,6 +36,10 @@ const Projects = ({ projects }) => {
     <div id={styles.projectPage}>
       <Container>
 
+        {
+          show ? <Spinner animation="border" role="status" /> : ""
+        }
+
         <h1>Projects: </h1>
         {
           projects.map((project, index) => (
@@ -39,7 +49,7 @@ const Projects = ({ projects }) => {
 
         <div id={styles.invite}>
           Come lets talk:
-          <Button size='sm' variant="outline-light" onClick={pushToContact} style={{ width: '6rem', marginTop: '1rem' }}>
+          <Button size='sm' className='mb-5' variant="outline-light" onClick={pushToContact} style={{ width: '6rem', marginTop: '1rem' }}>
             Contact 💌
           </Button>
         </div>

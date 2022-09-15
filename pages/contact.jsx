@@ -29,7 +29,7 @@ const Contact = () => {
           <Row className='pt-2'>
 
             <Col className={styles.imageColumn}>
-              <Image src={github} width={50} height={50} alt='github' />
+              <Image src={github} width={50} height={50} alt='github' placeholder="blur"/>
             </Col>
 
             <Col className={styles.linkColumn}>
@@ -42,7 +42,7 @@ const Contact = () => {
           <Row className='pt-2'>
 
             <Col className={styles.imageColumn}>
-              <Image src={reddit} width={50} height={50} alt='reddit' />
+              <Image src={reddit} width={50} height={50} alt='reddit' placeholder="blur"/>
             </Col>
 
             <Col className={styles.linkColumn}>
@@ -54,7 +54,7 @@ const Contact = () => {
           <Row className='pt-2'>
 
             <Col className={styles.imageColumn}>
-              <Image src={instagram} width={50} height={50} alt='instagram' />
+              <Image src={instagram} width={50} height={50} alt='instagram' placeholder="blur"/>
             </Col>
 
             <Col className={styles.linkColumn}>
@@ -66,7 +66,7 @@ const Contact = () => {
           <Row className='pt-2'>
 
             <Col className={styles.imageColumn}>
-              <Image src={gmail} width={50} height={50} alt='email' />
+              <Image src={gmail} width={50} height={50} alt='email' placeholder="blur"/>
             </Col>
 
             <Col className={styles.linkColumn}>

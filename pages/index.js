@@ -15,7 +15,7 @@ export default function Home() {
     <div id={styles.homepage}>
       <Container id={styles.homeContainer}>
         <div id={styles.hero}>
-          <Image src={codingLogo} width={200} height={200} alt="logo" id={styles.codeLogo} />
+          <Image src={codingLogo} width={200} height={200} alt="logo" id={styles.codeLogo} placeholder="blur" />
           <div id={styles.intro}>
             <h1 id={styles.heading}>Hi, I&apos;m {' '}<span id={styles.title}>AcidOP</span></h1>
             <p id={styles.heroText}>I&apos;m a Tech Enthusiast and a High School student.</p>

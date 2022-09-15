@@ -16,7 +16,7 @@ const Appbar = () => {
 	return (
 		<Navbar id={styles.appbar} variant='dark' expand="lg" sticky='top' collapseOnSelect>
 			<Container style={{ padding: '0.7em' }}>
-				<Link href='/'><Image src={logo} width={60} height={60} alt="logo" id={styles.logo} /></Link>
+				<Link href='/'><Image src={logo} width={60} height={60} alt="logo" id={styles.logo} placeholder="blur"/></Link>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="ms-auto">

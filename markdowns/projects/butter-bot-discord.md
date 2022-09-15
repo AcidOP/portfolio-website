@@ -5,13 +5,12 @@ slug: butter-bot-discord
 description: I made a discord bot for a server which I moderate. It's a simple bot, but it does the job.
 ---
 
-------------
 ### [ButterHost Bot](https://github.com/AcidOP/ButterHostServer)
-------------
+&nbsp;
 
 
 ##### What is Butter Bot?
-* Butter is a discord bot for the [Butter Host Server](https://discord.gg/8R7bZ9QZyq) built with blood, sweat and tears using [DiscordJS](https://discord.js.org/#/)
+* Butter is a discord bot for the [Butter Host Server](https://discord.gg/8R7bZ9QZyq) built with blood, sweat and tears using the [discord.js](https://discord.js.org/#/) library.
 
 ##### What does it do?
 1. Has a based levelling system. 💹

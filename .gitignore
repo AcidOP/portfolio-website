@@ -33,4 +33,4 @@ yarn-error.log*
 .vercel
 
 .vscode
-test.jsx
+sitemap.xml

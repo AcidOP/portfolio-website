@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { useRouter } from "next/router"
 
 import Container from 'react-bootstrap/Container'
@@ -9,6 +10,11 @@ const About = () => {
   const pushToProjects = () => router.push('/projects');
 
   return (
+    <>
+    <Head>
+      <meta name="description" content="I'm a full stack web developer and cybersecurity enthusiast. You can read cybersecurity news and find various kind of projects here." />
+      <meta name="keywords" content="about, about me, full stack web developer, cybersecurity, cybersecurity enthusiast, projects, news" />
+    </Head>
     <div id={styles.about} >
       <Container>
 
@@ -38,6 +44,7 @@ const About = () => {
 
       </Container>
     </div>
+    </>
   )
 }
 

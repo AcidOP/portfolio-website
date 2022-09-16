@@ -24,22 +24,23 @@ export async function getStaticPaths() {
   return { paths, fallback: true }
 }
 
-export async function getStaticProps({params: {slug}}) {
+export async function getStaticProps({ params: { slug } }) {
 
   const markdown = fs.readFileSync(`./markdowns/projects/${slug}.md`, 'utf8');
   const { data, content } = matter(markdown);
 
   return {
     props: {
-      data: content,
+      content,
       title: data.title,
       slug: data.slug,
       description: data.description,
+      keywords: data.keywords
     }
   }
 }
 
-const Project = ({ data, title, description, slug }) => {
+const Project = ({ content, title, description, slug, keywords }) => {
   const router = useRouter();
   const pushToProjects = () => router.push('/projects');
 
@@ -50,9 +51,9 @@ const Project = ({ data, title, description, slug }) => {
     <Head>
       <title>{heading}</title>
       <meta name="description" content={description} />
-      <meta property="og:title" content={heading} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
+      <meta property="og:keywords" content={keywords} />
       <meta property="og:url" content={`https://acidop.codes/${slug}`} />
       <meta property="og:locale" content="en_US" />
     </Head>
@@ -60,7 +61,7 @@ const Project = ({ data, title, description, slug }) => {
     <div id={styles.container}>
       <Container className='pb-5'>
         <ReactMarkdown className='pt-3' >
-          {data}
+          {content}
         </ReactMarkdown>
         <Button variant="outline-light" size='sm' className='mt-2 mb-5' onClick={pushToProjects}>
           Go Back 👈🏻

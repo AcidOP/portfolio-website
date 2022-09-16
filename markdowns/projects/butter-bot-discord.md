@@ -3,6 +3,7 @@ title: Butter Bot - Discord
 date: "2022-09-03"
 slug: butter-bot-discord
 description: I made a discord bot for a server which I moderate. It's a simple bot, but it does the job.
+keywords: ["discord bot", "discord.js v13" ]
 ---
 
 ### [ButterHost Bot](https://github.com/AcidOP/ButterHostServer)

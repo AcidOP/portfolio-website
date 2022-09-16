@@ -18,10 +18,6 @@ function MyApp({ Component, pageProps }) {
       <Head>
 
         <title>{title}</title>
-        <meta property="og:title" content={title} />
-        <meta property="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:description" content="My portfolio website" />
-        <meta property="og:url" content="https://acidop.codes" />
 
       </Head>
 

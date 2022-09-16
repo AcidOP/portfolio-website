@@ -1,4 +1,5 @@
 import fs from 'fs'
+import Head from 'next/head'
 import { useState } from 'react'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
@@ -33,6 +34,12 @@ const Projects = ({ projects }) => {
   }
 
   return (
+    <>
+    <Head>
+      <meta name="description" content="Here are some awesome projects which I've worked on." />
+      <meta keywords="projects, web development, web apps, web design, web development projects, web development apps, web development design, javascript, typescript, python, cybersecurity" />
+      <meta property="keywords" content="projects, web development, web apps, web design, web development projects, web development apps, web development design, javascript, typescript, python, cybersecurity, hacking, programming" />
+    </Head>
     <div id={styles.projectPage}>
       <Container>
 
@@ -56,6 +63,7 @@ const Projects = ({ projects }) => {
 
       </Container>
     </div>
+    </>
   )
 }
 

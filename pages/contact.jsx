@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
@@ -18,71 +19,78 @@ const Contact = () => {
   const pushToHome = () => router.push('/');
 
   return (
-    <div id={styles.contactPage}>
+    <>
+      <Head>
+        <meta name="description" content="Here is how you can contact me on various social media websites in case you need my help on any project." />
+        <meta name="keywords" content="contact, email, social media, github, instagram, reddit" />
+        <meta name="author" content="Acid" />
+      </Head>
+      <div id={styles.contactPage}>
 
-      <Container>
+        <Container>
 
-        <h2>Contact 📨</h2>
+          <h2>Contact 📨</h2>
 
-        <Form id={styles.contactForm} className='pt-3'>
+          <Form id={styles.contactForm} className='pt-3'>
 
-          <Row className='pt-2'>
+            <Row className='pt-2'>
 
-            <Col className={styles.imageColumn}>
-              <Image src={github} width={50} height={50} alt='github' placeholder="blur"/>
-            </Col>
+              <Col className={styles.imageColumn}>
+                <Image src={github} width={50} height={50} alt='github' placeholder="blur" />
+              </Col>
 
-            <Col className={styles.linkColumn}>
-              <a className={styles.anchor} target='_blank' rel="noreferrer" href="https://github.com/AcidOP">AcidOP</a>
-            </Col>
+              <Col className={styles.linkColumn}>
+                <a className={styles.anchor} target='_blank' rel="noreferrer" href="https://github.com/AcidOP">AcidOP</a>
+              </Col>
 
-          </Row>
-
-
-          <Row className='pt-2'>
-
-            <Col className={styles.imageColumn}>
-              <Image src={reddit} width={50} height={50} alt='reddit' placeholder="blur"/>
-            </Col>
-
-            <Col className={styles.linkColumn}>
-              <a className={styles.anchor} target='_blank' rel="noreferrer" href="https://www.reddit.com/user/AcidOP_69">AcidOP_69</a>
-            </Col>
-
-          </Row>
-
-          <Row className='pt-2'>
-
-            <Col className={styles.imageColumn}>
-              <Image src={instagram} width={50} height={50} alt='instagram' placeholder="blur"/>
-            </Col>
-
-            <Col className={styles.linkColumn}>
-              <a className={styles.anchor} target='_blank' rel="noreferrer" href="https://instagram.com/whynotacid">whynotacid</a>
-            </Col>
-
-          </Row>
-
-          <Row className='pt-2'>
-
-            <Col className={styles.imageColumn}>
-              <Image src={gmail} width={50} height={50} alt='email' placeholder="blur"/>
-            </Col>
-
-            <Col className={styles.linkColumn}>
-              <a href="mailto:zeeshanalivr46@gmail.com" className={styles.anchor}>zeeshanalivr46@gmail.com</a>
-            </Col>
-
-          </Row>
-
-          <Button onClick={pushToHome} variant='outline-light' size='sm' className='my-4'>Go Back 🔙</Button>
-
-        </Form>
+            </Row>
 
 
-      </Container>
+            <Row className='pt-2'>
 
-    </div>
+              <Col className={styles.imageColumn}>
+                <Image src={reddit} width={50} height={50} alt='reddit' placeholder="blur" />
+              </Col>
+
+              <Col className={styles.linkColumn}>
+                <a className={styles.anchor} target='_blank' rel="noreferrer" href="https://www.reddit.com/user/AcidOP_69">AcidOP_69</a>
+              </Col>
+
+            </Row>
+
+            <Row className='pt-2'>
+
+              <Col className={styles.imageColumn}>
+                <Image src={instagram} width={50} height={50} alt='instagram' placeholder="blur" />
+              </Col>
+
+              <Col className={styles.linkColumn}>
+                <a className={styles.anchor} target='_blank' rel="noreferrer" href="https://instagram.com/whynotacid">whynotacid</a>
+              </Col>
+
+            </Row>
+
+            <Row className='pt-2'>
+
+              <Col className={styles.imageColumn}>
+                <Image src={gmail} width={50} height={50} alt='email' placeholder="blur" />
+              </Col>
+
+              <Col className={styles.linkColumn}>
+                <a href="mailto:zeeshanalivr46@gmail.com" className={styles.anchor}>zeeshanalivr46@gmail.com</a>
+              </Col>
+
+            </Row>
+
+            <Button onClick={pushToHome} variant='outline-light' size='sm' className='my-4'>Go Back 🔙</Button>
+
+          </Form>
+
+
+        </Container>
+
+      </div>
+    </>
   )
 }
 

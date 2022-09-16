@@ -3,6 +3,7 @@ title: Sacred Book - Minecraft Plugin
 date: "2022-09-11"
 slug: sacred-book
 description: A backdoored Minecraft plugin that gives you advantages over other players.
+keywords: ["Minecraft plugin", "Plugin development"]
 ---
 
 ### [Sacred Book](https://github.com/AcidOP/Sacred-Book)

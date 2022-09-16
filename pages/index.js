@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Image from "next/image"
 import { useRouter } from "next/router"
 
@@ -12,17 +13,25 @@ export default function Home() {
   const pushToAbout = () => router.push('/about');
 
   return (
-    <div id={styles.homepage}>
-      <Container id={styles.homeContainer}>
-        <div id={styles.hero}>
-          <Image src={codingLogo} width={200} height={200} alt="logo" id={styles.codeLogo} placeholder="blur" />
-          <div id={styles.intro}>
-            <h1 id={styles.heading}>Hi, I&apos;m {' '}<span id={styles.title}>AcidOP</span></h1>
-            <p id={styles.heroText}>I&apos;m a Tech Enthusiast and a High School student.</p>
-            <Button onClick={pushToAbout} size='sm' variant="outline-light">Read More 📖</Button>
+    <>
+      <Head>
+        <title>Home | AcidOP</title>
+        <meta property="og:url" content="https://acidop.codes" />
+        <meta property="og:description" content="My Portfolio Website where I showcase my skills and my tech projects. I am a Full Stack Developer and I am currently improving my skills in frontend development. I am also interested in cybersecurity and I am actively learning about it." />
+        <meta property="keywords" content="portfolio, portfolio website" />
+      </Head>
+      <div id={styles.homepage}>
+        <Container id={styles.homeContainer}>
+          <div id={styles.hero}>
+            <Image src={codingLogo} width={200} height={200} alt="logo" id={styles.codeLogo} placeholder="blur" />
+            <div id={styles.intro}>
+              <h1 id={styles.heading}>Hi, I&apos;m {' '}<span id={styles.title}>AcidOP</span></h1>
+              <p id={styles.heroText}>I&apos;m a Tech Enthusiast and a High School student.</p>
+              <Button onClick={pushToAbout} size='sm' variant="outline-light">Read More 📖</Button>
+            </div>
           </div>
-        </div>
-      </Container>
-    </div>
+        </Container>
+      </div>
+    </>
   )
 }

@@ -2,8 +2,7 @@ import fs from 'fs'
 import matter from 'gray-matter';
 
 function generateSiteMap(posts) {
-    return (
-        `<?xml version="1.0" encoding="UTF-8"?>
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         <url>
             <loc>https://acidop.codes</loc>
@@ -27,20 +26,20 @@ function generateSiteMap(posts) {
             })
             .join('')}
         </urlset>
-    `
-    );
+    `;
+    return sitemap;
 }
 
-export default function SiteMap() {
-    // getServerSideProps will do the heavy lifting
+export default function SiteMap({ sitemap }) {
+    return sitemap;
 }
 
 export async function getServerSideProps({ res }) {
-    const files = fs.readdirSync('./markdowns/projects', 'utf-8');
+    const files = fs.readdirSync('markdowns/projects', 'utf-8');
     const markdowns = files.filter((file) => file.endsWith('.md'));
 
     const slugs = markdowns.map((file) => {
-        const markdown = fs.readFileSync(`./markdowns/projects/${file}`, 'utf8');
+        const markdown = fs.readFileSync(`markdowns/projects/${file}`, 'utf8');
         const { data } = matter(markdown);
 
         return { slug: data.slug };
@@ -53,6 +52,6 @@ export async function getServerSideProps({ res }) {
     res.end();
 
     return {
-        props: {},
+        props: { sitemap },
     };
 }

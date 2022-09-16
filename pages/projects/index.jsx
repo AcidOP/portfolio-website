@@ -37,6 +37,7 @@ const Projects = ({ projects }) => {
     <>
     <Head>
       <meta name="description" content="Here are some awesome projects which I've worked on." />
+      <meta property="og:description" content="Here are some awesome projects which I've worked on." />
       <meta name="keywords" content="projects, web development, web apps, web design, web development projects, web development apps, web development design, javascript, typescript, python, cybersecurity, hacking, programming" />
     </Head>
     <div id={styles.projectPage}>

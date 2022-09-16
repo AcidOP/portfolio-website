@@ -1,5 +1,7 @@
 const { readdirSync, writeFileSync } = require('fs');
 
+console.log('Generating sitemap.xml');
+
 const rootDir = process.cwd();
 const projectDir = rootDir + '/markdowns/projects';
 
@@ -32,3 +34,4 @@ ${sitemapUrls.map(url => `
 `;
 
 writeFileSync('public/sitemap.xml', sitemap);
+console.log('sitemap.xml generated');

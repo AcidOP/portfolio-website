@@ -16,9 +16,10 @@ export default function Home() {
     <>
       <Head>
         <title>Home | AcidOP</title>
-        <meta property="og:url" content="https://acidop.codes" />
-        <meta property="og:description" content="My Portfolio Website where I showcase my skills and my tech projects. I am a Full Stack Developer and I am currently improving my skills in frontend development. I am also interested in cybersecurity and I am actively learning about it." />
+        <meta property="url" content="https://acidop.codes" />
+        <meta property="description" content="My Portfolio Website where I showcase my skills and my tech projects. I am a Full Stack Developer and I am currently improving my skills in frontend development. I am also interested in cybersecurity and I am actively learning about it." />
         <meta property="keywords" content="portfolio, portfolio website" />
+        <link rel="canonical" href="https://acidop.codes" />
       </Head>
       <div id={styles.homepage}>
         <Container id={styles.homeContainer}>

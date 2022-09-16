@@ -51,11 +51,11 @@ const Project = ({ content, title, description, slug, keywords }) => {
     <Head>
       <title>{heading}</title>
       <meta name="description" content={description} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
-      <meta property="og:keywords" content={keywords} />
-      <meta property="og:url" content={`https://acidop.codes/${slug}`} />
-      <meta property="og:locale" content="en_US" />
+      <meta property="description" content={description} />
+      <meta property="type" content="website" />
+      <meta property="keywords" content={keywords} />
+      <meta property="url" content={`https://acidop.codes/${slug}`} />
+      <link rel="canonical" href="https://acidop.codes/projects" />
     </Head>
 
     <div id={styles.container}>

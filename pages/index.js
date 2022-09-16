@@ -20,9 +20,9 @@ export default function Home() {
         <meta name="description" content="My Portfolio Website where I showcase my skills and my tech projects. I am also interested in cybersecurity and I am actively learning about it." />
         <meta name="keywords" content="portfolio, portfolio website" />
         <meta name="author" content="AcidOP" />
-        <meta name="og:description" content="My Portfolio Website where I showcase my skills and my tech projects. I am also interested in cybersecurity and I am actively learning about it." />
-        <meta name="og:url" content="https://acidop.codes" />
-        <meta name="og:type" content="website" />
+        <meta property="og:description" content="My Portfolio Website where I showcase my skills and my tech projects. I am also interested in cybersecurity and I am actively learning about it." />
+        <meta property="og:url" content="https://acidop.codes" />
+        <meta property="og:type" content="website" />
 
         <link rel="canonical" href="https://acidop.codes" />
       </Head>

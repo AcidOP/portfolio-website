@@ -51,7 +51,7 @@ const Project = ({ content, title, description, slug, keywords }) => {
     <Head>
       <title>{heading}</title>
       <meta name="description" content={description} />
-      <meta property="og:description" content={description} />
+      <meta name="og:description" content={description} />
       <meta name="type" content="website" />
       <meta name="keywords" content={keywords} />
       <meta name="url" content={`https://acidop.codes/${slug}`} />

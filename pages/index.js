@@ -17,12 +17,12 @@ export default function Home() {
       <Head>
         <title>Home | AcidOP</title>
         <meta name="url" content="https://acidop.codes" />
-        <meta name="description" content="My Portfolio Website where I showcase my skills and my tech projects. I am a Full Stack Developer and I am currently improving my skills in frontend development. I am also interested in cybersecurity and I am actively learning about it." />
+        <meta name="description" content="My Portfolio Website where I showcase my skills and my tech projects. I am also interested in cybersecurity and I am actively learning about it." />
         <meta name="keywords" content="portfolio, portfolio website" />
         <meta name="author" content="AcidOP" />
-        <meta property="og:description" content="My Portfolio Website where I showcase my skills and my tech projects. I am a Full Stack Developer and I am currently improving my skills in frontend development. I am also interested in cybersecurity and I am actively learning about it." />
-        <meta property="og:url" content="https://acidop.codes" />
-        <meta property="og:type" content="website" />
+        <meta name="og:description" content="My Portfolio Website where I showcase my skills and my tech projects. I am also interested in cybersecurity and I am actively learning about it." />
+        <meta name="og:url" content="https://acidop.codes" />
+        <meta name="og:type" content="website" />
 
         <link rel="canonical" href="https://acidop.codes" />
       </Head>

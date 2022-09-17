@@ -24,7 +24,7 @@ export default function Home() {
         <meta property="og:description" content="My Portfolio Website where I showcase my skills and my tech projects. I am also interested in cybersecurity and I am actively learning about it." />
         <meta property="og:url" content="https://acidop.codes" />
         <meta property="og:type" content="website" />
-
+        <meta property="og:image" content="https://acidop.codes/images/og-image.png" />
         <link rel="canonical" href="https://acidop.codes" />
       </Head>
       <div id={styles.homepage}>

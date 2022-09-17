@@ -19,7 +19,7 @@ const About = () => {
       <Container>
 
         <div id={styles.hero}>
-          <h2>Hello There 👋</h2>
+          <h2 className="pb-3">Hello There 👋</h2>
 
           <p className={styles.heroText}>
             I&apos;m a 17 year old self taught programmer. I love to sip coffee and cry while I am trying to code.
@@ -33,11 +33,11 @@ const About = () => {
           </p>
 
 
-          <p id={styles.heroContact}>
+          <h6 id={styles.heroContact}>
             Check out these cool projects I have built:
             <Button onClick={pushToProjects} variant="outline-light" size='sm' id={styles.contactButton}>Projects 🔨</Button>
             <br />
-          </p>
+          </h6>
 
 
         </div>

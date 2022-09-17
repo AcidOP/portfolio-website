@@ -20,11 +20,11 @@ export default function Home() {
         <meta name="description" content="My Portfolio Website where I showcase my skills and my tech projects. I am also interested in cybersecurity and I am actively learning about it." />
         <meta name="keywords" content="portfolio, portfolio website" />
         <meta name="author" content="AcidOP" />
-        <meta property="og:title" content="Home | AcidOP" />
+        <meta property="og:title" content="acidop.codes" />
         <meta property="og:description" content="My Portfolio Website where I showcase my skills and my tech projects. I am also interested in cybersecurity and I am actively learning about it." />
         <meta property="og:url" content="https://acidop.codes" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://acidop.codes/images/og-image.png" />
+        <meta property="og:image" content="https://acidop.codes/images/og-image.jpg" />
         <link rel="canonical" href="https://acidop.codes" />
       </Head>
       <div id={styles.homepage}>
@@ -33,8 +33,8 @@ export default function Home() {
             <Image src={codingLogo} width={200} height={200} alt="logo" id={styles.codeLogo} placeholder="blur" />
             <div id={styles.intro}>
               <h1 id={styles.heading}>Hi, I&apos;m {' '}<span id={styles.title}>AcidOP</span></h1>
-              <p id={styles.heroText}>I&apos;m a Tech Enthusiast and a High School student.</p>
-              <Button onClick={pushToAbout} size='sm' variant="outline-light">Read More 📖</Button>
+              <h6 id={styles.heroText}>I&apos;m a Tech Enthusiast and a High School student.</h6>
+              <Button className="mt-3" onClick={pushToAbout} size='sm' variant="outline-light">Read More 📖</Button>
             </div>
           </div>
         </Container>

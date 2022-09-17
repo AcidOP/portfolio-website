@@ -55,7 +55,7 @@ const Projects = ({ projects }) => {
         }
 
         <div id={styles.invite}>
-          Come lets talk:
+          <h6>Come lets talk:</h6>
           <Button size='sm' className='mb-5' variant="outline-light" onClick={pushToContact} style={{ width: '6rem', marginTop: '1rem' }}>
             Contact 💌
           </Button>

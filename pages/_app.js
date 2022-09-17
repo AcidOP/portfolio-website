@@ -16,9 +16,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-
         <title>{title}</title>
-
+        <meta name="author" content="AcidOP" />
       </Head>
 
       <Script src="https://api.acidop.codes/latest.js"  />

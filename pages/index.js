@@ -1,7 +1,6 @@
-import Head from "next/head"
 import Image from "next/image"
 import { useRouter } from "next/router"
-
+import PageSEO from "./components/PageSEO"
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
 
@@ -14,18 +13,11 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Home | AcidOP</title>
-        <meta name="url" content="https://acidop.codes" />
-        <meta name="description" content="My Portfolio Website where I showcase my skills and my tech projects. I am also interested in cybersecurity and I am actively learning about it." />
-        <meta name="keywords" content="portfolio, portfolio website" />
-        <meta property="og:title" content="acidop.codes" />
-        <meta property="og:description" content="My Portfolio Website where I showcase my skills and my tech projects. I am also interested in cybersecurity and I am actively learning about it." />
-        <meta property="og:url" content="https://acidop.codes" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://acidop.codes/images/og-image.jpg" />
-        <link rel="canonical" href="https://acidop.codes" />
-      </Head>
+      <PageSEO
+        title="Home | AcidOP"
+        description="This is my personal website where I write articles and share my journey with everyone."
+        keywords={['AcidOP', 'personal', 'website', 'tech', 'blog']}
+      />
       <div id={styles.homepage}>
         <Container id={styles.homeContainer}>
           <div id={styles.hero}>

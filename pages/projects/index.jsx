@@ -11,6 +11,7 @@ import Container from 'react-bootstrap/Container'
 
 import styles from '../../styles/projects.module.css'
 import cardStyle from '../../styles/projectCard.module.css'
+import PageSEO from '../components/PageSEO'
 
 const Projects = ({ projects }) => {
   const router = useRouter();
@@ -35,12 +36,11 @@ const Projects = ({ projects }) => {
 
   return (
     <>
-    <Head>
-      <meta name="description" content="Here are some awesome projects which I've worked on." />
-      <meta property='og:title' content='Projects' />
-      <meta property="og:description" content="Here are some awesome projects which I've worked on." />
-      <meta name="keywords" content="projects, web development, web apps, web design, web development projects, web development apps, web development design, javascript, typescript, python, cybersecurity, hacking, programming" />
-    </Head>
+    <PageSEO 
+      title="Projects | AcidOP"
+      description="Here are some of the projects I have worked on. You can also contact me if you need help on any project."
+      keywords={["Projects", "NodeJS", "NextJS", "React", "Javascript", "Python", "Programming", "Code"]}
+    />
     <div id={styles.projectPage}>
       <Container>
 

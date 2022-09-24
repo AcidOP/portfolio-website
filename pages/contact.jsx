@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
@@ -13,6 +12,7 @@ import github from '../public/github.png'
 import reddit from '../public/reddit.png'
 import gmail from '../public/gmail.png'
 import styles from '../styles/contact.module.css'
+import PageSEO from './components/PageSEO'
 
 const Contact = () => {
   const router = useRouter();
@@ -20,11 +20,13 @@ const Contact = () => {
 
   return (
     <>
-      <Head>
-        <meta name="description" content="Here is how you can contact me on various social media websites in case you need my help on any project." />
-        <meta name="keywords" content="contact, email, social media, github, instagram, reddit" />
-        <meta name="author" content="Acid" />
-      </Head>
+      <PageSEO
+        title="Contact | AcidOP"
+        description="Here is how you can contact me on various social media websites in case you need my help on any project."
+        ogType="website"
+        keywords={['contact', 'email', 'social media', 'github', 'instagram', 'reddit']}
+        />
+
       <div id={styles.contactPage}>
 
         <Container>

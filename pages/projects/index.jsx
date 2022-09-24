@@ -17,7 +17,6 @@ const Projects = ({ projects }) => {
   const ProjectCard = ({project}) => {
     const pushToProjectPage = () => {
       router.push(`/projects/${project.slug}`)
-      setShow(true)
     }
     return <Card className={cardStyle.myCard} onClick={pushToProjectPage}>
       <div className={cardStyle.container}>

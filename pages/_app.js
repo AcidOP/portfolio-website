@@ -10,7 +10,7 @@ import '../styles/globals.css'
 import '../styles/nprogress.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+NProgress.configure({showSpinner:false})
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

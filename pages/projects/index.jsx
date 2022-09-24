@@ -1,11 +1,8 @@
 import fs from 'fs'
-import Head from 'next/head'
-import { useState } from 'react'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
 
 import Card from 'react-bootstrap/Card'
-import Spinner from 'react-bootstrap/Spinner'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 
@@ -16,7 +13,6 @@ import PageSEO from '../components/PageSEO'
 const Projects = ({ projects }) => {
   const router = useRouter();
   const pushToContact = () => router.push('/contact')
-  const [show, setShow] = useState(false);
   
   const ProjectCard = ({project}) => {
     const pushToProjectPage = () => {
@@ -43,10 +39,6 @@ const Projects = ({ projects }) => {
     />
     <div id={styles.projectPage}>
       <Container>
-
-        {
-          show ? <Spinner animation="border" role="status" /> : ""
-        }
 
         <h1>Projects: </h1>
         {

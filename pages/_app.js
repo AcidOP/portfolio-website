@@ -32,6 +32,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="author" content="AcidOP" />
       </Head>
 
+      {/* Analytics. Remove this in your site */}
       <Script src="https://api.acidop.codes/latest.js"  />
 
       <Appbar />

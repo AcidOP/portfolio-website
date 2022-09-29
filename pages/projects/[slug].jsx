@@ -1,11 +1,11 @@
 import fs from 'fs'
-import Head from 'next/head'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
 import ReactMarkdown from 'react-markdown'
 
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
+import PageSEO from '../components/PageSEO'
 
 import styles from '../../styles/projectPage.module.css'
 
@@ -40,7 +40,7 @@ export async function getStaticProps({ params: { slug } }) {
   }
 }
 
-const Project = ({ content, title, description, slug, keywords }) => {
+const Project = ({ content, title, description,  keywords }) => {
   const router = useRouter();
   const pushToProjects = () => router.push('/projects');
 
@@ -48,17 +48,11 @@ const Project = ({ content, title, description, slug, keywords }) => {
   const heading = title + ' | AcidOP'
 
   return (<>
-    <Head>
-      <title>{heading}</title>
-      <meta name="description" content={description} />
-      <meta property='og:title' content={heading} />
-      <meta property="og:description" content={description} />
-      <meta name="type" content="website" />
-      <meta name="keywords" content={keywords} />
-      <meta name="url" content={`https://acidop.codes/${slug}`} />
-      <link rel="canonical" href="https://acidop.codes/projects" />
-    </Head>
-
+    <PageSEO
+      title={heading}
+      description={description}
+      keywords={keywords}
+    />
     <div id={styles.container}>
       <Container className='pb-5'>
         <ReactMarkdown className='pt-3' >

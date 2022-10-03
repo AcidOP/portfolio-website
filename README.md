@@ -1,7 +1,12 @@
-# My personal site
+<p align='center'>
+  <a href="https://acidop.codes/">
+  <img src="https://acidop.codes/logo.png" alt="Repo Logo" height="70" width="70">
+  </a>
+  <h2 align="center">My Personal Next.JS Website</h2>
+</p>
 
-This is the source code for my personal site, which is hosted at [acidop.codes](https://acidop.codes).
-I made the design as minimal as possible, and I'm quite happy with it.
+
+#### This is the source code for my personal site, which is hosted at [acidop.codes](https://acidop.codes). I made the design as minimal as possible, and I'm very happy with it.
 
 ### Tech stack used
 * [Next.js](https://nextjs.org/) for static site generation 🚀
@@ -23,3 +28,5 @@ I made the design as minimal as possible, and I'm quite happy with it.
 
 * If you want to use this code for your own site, you will need to change `pages/about.jsx`, `pages/contact.jsx` with your details and put your own projects in `markdowns/projects/`.
 
+## Stargazers 🌟
+[![Stargazers repo roster for acidop.codes](https://reporoster.com/stars/AcidOP/acidop.codes)](https://github.com/AcidOP/acidop.codes/stargazers)

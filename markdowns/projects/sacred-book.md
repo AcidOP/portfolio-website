@@ -7,7 +7,7 @@ keywords: ["Minecraft plugin", "Plugin development"]
 ---
 
 ### [Sacred Book](https://github.com/AcidOP/Sacred-Book)
-&nbsp;
+
 
 #### What is this?
 

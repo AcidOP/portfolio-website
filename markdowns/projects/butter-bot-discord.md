@@ -7,7 +7,6 @@ keywords: ["discord bot", "discord.js v13" ]
 ---
 
 ### [ButterHost Bot](https://github.com/AcidOP/ButterHostServer)
-&nbsp;
 
 
 ##### What is Butter Bot?

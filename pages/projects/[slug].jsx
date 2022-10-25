@@ -1,7 +1,7 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
-import ReactMarkdown from 'react-markdown'
+import Markdown from 'marked-react';
 
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
@@ -55,9 +55,12 @@ const Project = ({ content, title, description,  keywords }) => {
     />
     <div id={styles.container}>
       <Container className='pb-5'>
-        <ReactMarkdown className='pt-3' >
+        {/* <ReactMarkdown className='pt-3' >
           {content}
-        </ReactMarkdown>
+        </ReactMarkdown> */}
+        <Markdown className='pt-3' >
+          {content}
+        </Markdown>
         <Button variant="outline-light" size='sm' className='mt-2 mb-5' onClick={pushToProjects}>
           Go Back 👈🏻
         </Button>

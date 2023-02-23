@@ -1,3 +1,5 @@
+# Edit: This is the older version of my website when I was new to Web Development.
+
 <h2 align="center">My Personal Next.JS Website</h2>
 
 #### This is the source code for my personal site, which is hosted at [acidop.codes](https://acidop.codes). I made the design as minimal as possible, and I'm very happy with it.
